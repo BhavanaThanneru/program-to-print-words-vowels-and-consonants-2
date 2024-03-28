@@ -1,0 +1,15 @@
+t=int(input())
+for _ in range(t):
+  a=input().split()
+  wc=len(a) 
+  vc=0 
+  cc=0
+  v="aeiouAEIOU"
+  for i in a:
+    for j in i:
+      if j.isalpha():
+        if j in v:
+          vc=vc+1
+        else:
+          cc=cc+1
+  print(wc,vc,cc)
